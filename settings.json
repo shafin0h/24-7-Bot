@@ -24,16 +24,14 @@
     },
     "anti-afk": {
       "enabled": true,
-      "sneak": true
+      "sneak": false
     },
     "chat-messages": {
       "enabled": false,
       "repeat": false,
       "repeat-delay": 120,
       "messages": [
-        "I'm a regular player",
-        "Subscribe to SoloPlayz!",
-        "Want Cheap Premium MC Server? https://discord.gg/VRMUnDkf95"
+        "I'm a regular player"
       ]
     },
     "chat-log": true,
