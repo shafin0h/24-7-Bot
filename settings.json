@@ -27,11 +27,16 @@
       "sneak": false
     },
     "chat-messages": {
-      "enabled": false,
-      "repeat": false,
-      "repeat-delay": 120,
+      "enabled": true,
+      "repeat": true,
+      "repeat-delay": 240,
+      "repeat-delay-jitter": 90,
       "messages": [
-        "I'm a regular player"
+        "brb grabbing something",
+        "anyone need help w anything",
+        "this server is so laggy rn lol",
+        "mining for a bit, shout if u need me",
+        "afk-ish, still here tho"
       ]
     },
     "chat-log": true,
@@ -42,17 +47,33 @@
   "movement": {
     "enabled": true,
     "circle-walk": {
+      "enabled": false
+    },
+    "wander": {
       "enabled": true,
-      "radius": 4,
-      "speed": 3000
+      "radius": 6,
+      "min-pause-ms": 1500,
+      "max-pause-ms": 8000,
+      "min-step-ms": 800,
+      "max-step-ms": 2500
     },
     "look-around": {
       "enabled": true,
-      "interval": 5000
+      "min-interval": 2000,
+      "max-interval": 9000,
+      "random-pitch": true
     },
     "random-jump": {
       "enabled": true,
-      "interval": 10000
+      "min-interval": 15000,
+      "max-interval": 60000,
+      "chance": 0.4
+    },
+    "idle-pauses": {
+      "enabled": true,
+      "min-interval": 30000,
+      "max-interval": 120000,
+      "duration-ms": [2000, 6000]
     }
   },
   "modules": {
@@ -64,7 +85,8 @@
   },
   "combat": {
     "attack-mobs": true,
-    "auto-eat": true
+    "auto-eat": true,
+    "reaction-delay-ms": [200, 600]
   },
   "beds": {
     "pick-up-day": false,
@@ -80,6 +102,7 @@
     }
   },
   "chat": {
-    "respond": true
+    "respond": true,
+    "response-delay-ms": [800, 3000]
   }
 }
