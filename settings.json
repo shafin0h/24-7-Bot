@@ -1,5 +1,5 @@
 {
-  "name": "Villager Bot",
+  "name": "AFK Bot",
   "bot-account": {
     "username": "247BOT",
     "password": "",
@@ -27,18 +27,11 @@
       "sneak": false
     },
     "chat-messages": {
-      "enabled": true,
-      "repeat": true,
-      "repeat-delay": 300,
-      "repeat-delay-jitter": 120,
+      "enabled": false,
+      "repeat": false,
+      "repeat-delay": 120,
       "messages": [
-        "Hmm.",
-        "Hmmm...",
-        "Hmm hmm.",
-        "Hm!",
-        "Hmmmm",
-        "Hm hm hm.",
-        "..."
+        "I'm a regular player"
       ]
     },
     "chat-log": true,
@@ -49,49 +42,29 @@
   "movement": {
     "enabled": true,
     "circle-walk": {
-      "enabled": false
-    },
-    "wander": {
       "enabled": true,
-      "radius": 3,
-      "min-pause-ms": 3000,
-      "max-pause-ms": 12000,
-      "min-step-ms": 600,
-      "max-step-ms": 1800,
-      "shuffle-direction": true
+      "radius": 4,
+      "speed": 3000
     },
     "look-around": {
       "enabled": true,
-      "min-interval": 1500,
-      "max-interval": 5000,
-      "random-pitch": false,
-      "pitch-range": [0, 15]
+      "interval": 5000
     },
     "random-jump": {
-      "enabled": false
-    },
-    "idle-pauses": {
       "enabled": true,
-      "min-interval": 8000,
-      "max-interval": 25000,
-      "duration-ms": [2000, 8000]
-    },
-    "head-bob": {
-      "enabled": true,
-      "interval": 1200
+      "interval": 10000
     }
   },
   "modules": {
     "avoidMobs": true,
-    "combat": false,
+    "combat": true,
     "beds": false,
-    "chat": false,
+    "chat": true,
     "console-commands": true
   },
   "combat": {
-    "attack-mobs": false,
-    "auto-eat": true,
-    "reaction-delay-ms": [400, 900]
+    "attack-mobs": true,
+    "auto-eat": true
   },
   "beds": {
     "pick-up-day": false,
@@ -107,6 +80,6 @@
     }
   },
   "chat": {
-    "respond": false
+    "respond": true
   }
 }
