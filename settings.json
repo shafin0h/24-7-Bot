@@ -6,7 +6,7 @@
     "type": "offline"
   },
   "server": {
-    "ip": "15.235.215.108:10421",
+    "ip": "world880.mcsh.io",
     "port": 25565,
     "version": "1.21.8",
     "try-creative": false
