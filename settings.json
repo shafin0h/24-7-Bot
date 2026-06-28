@@ -12,7 +12,7 @@
     "try-creative": false
   },
   "position": {
-    "enabled": false,
+    "enabled": true,
     "x": 0,
     "y": 100,
     "z": 0
@@ -23,7 +23,7 @@
       "password": "onlyshafin12"
     },
     "anti-afk": {
-      "enabled": true,
+      "enabled": false,
       "sneak": false
     },
     "chat-messages": {
@@ -31,6 +31,7 @@
       "repeat": true,
       "repeat-delay": 1800,
       "messages": [
+        "/sit",
         "Hi, I'm Shafin's GF. If the server is off, join to auto-start."
       ]
     },
@@ -38,10 +39,6 @@
     "auto-reconnect": true,
     "auto-reconnect-delay": 2000,
     "max-reconnect-delay": 120000
-  },
-  "on-login": {
-    "enabled": true,
-    "commands": ["/sit"]
   },
   "movement": {
     "enabled": false,
@@ -51,7 +48,7 @@
       "speed": 3000
     },
     "look-around": {
-      "enabled": true,
+      "enabled": false,
       "interval": 5000
     },
     "random-jump": {
