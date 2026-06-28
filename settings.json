@@ -1,12 +1,12 @@
 {
   "name": "AFK Bot",
   "bot-account": {
-    "username": "247BOT",
+    "username": "Ram",
     "password": "",
     "type": "offline"
   },
   "server": {
-    "ip": "world880.mcsh.io",
+    "ip": "15.235.215.108:10421",
     "port": 25565,
     "version": "1.20.1",
     "try-creative": false
@@ -27,11 +27,11 @@
       "sneak": false
     },
     "chat-messages": {
-      "enabled": false,
-      "repeat": false,
-      "repeat-delay": 120,
+      "enabled": true,
+      "repeat": true,
+      "repeat-delay": 1800,
       "messages": [
-        "I'm a regular player"
+        "Hi, I'm Shafin's GF. If the server is off, join to auto-start."
       ]
     },
     "chat-log": true,
@@ -40,9 +40,9 @@
     "max-reconnect-delay": 120000
   },
   "movement": {
-    "enabled": true,
+    "enabled": false,
     "circle-walk": {
-      "enabled": true,
+      "enabled": false,
       "radius": 4,
       "speed": 3000
     },
@@ -51,7 +51,7 @@
       "interval": 5000
     },
     "random-jump": {
-      "enabled": true,
+      "enabled": false,
       "interval": 10000
     }
   },
@@ -59,7 +59,7 @@
     "avoidMobs": true,
     "combat": true,
     "beds": false,
-    "chat": true,
+    "chat": false,
     "console-commands": true
   },
   "combat": {
@@ -80,6 +80,6 @@
     }
   },
   "chat": {
-    "respond": true
+    "respond": false
   }
 }
