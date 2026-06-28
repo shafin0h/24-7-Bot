@@ -21,6 +21,7 @@
     "auto-auth": {
       "enabled": true,
       "password": "onlyshafin12"
+      "cmd": "sit"
     },
     "anti-afk": {
       "enabled": true,
